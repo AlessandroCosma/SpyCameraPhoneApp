@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".myview.TakeAPictureActivity">
+
+    <TextView
+        android:id="@+id/imageInfo"
+        android:layout_width="277dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/DataBaseImage"
+        android:layout_centerHorizontal="true"
+        android:text="Nessuna immagine" />
+
+    <ImageView
+        android:id="@+id/DataBaseImage"
+        android:layout_width="277dp"
+        android:layout_height="187dp"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/logOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageInfo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="84dp"
+        android:text="logOut" />
+
+    <Button
+        android:id="@+id/pictureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageInfo"
+        android:layout_alignBottom="@+id/logOutButton"
+        android:text="PHOTO" />
+        //android:src="@android:drawable/ic_menu_camera"/>
+        //tools:foreground="@android:drawable/ic_menu_camera" />
+</RelativeLayout>
